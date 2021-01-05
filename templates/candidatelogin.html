@@ -1,0 +1,242 @@
+<html>
+	<head>
+		<title>RESUME PARSER/CANDIDATE LOGIN </title>
+		 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <style>
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding-top:40px;
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
+.navbar .nav {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+padding-top:15px;
+ font-weight:bold;
+  font-size: 1.4rem;
+   height:auto;
+}
+
+.navbar-inverse {
+  background-color: #2784fc;
+  height:auto;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #003300
+}
+
+.dropdown-menu {
+  background-color: #006B00
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: white
+}
+
+.navbar-inverse {
+  background-image: none;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-image: none;
+}
+
+.navbar-inverse {
+  border-color: #003300
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  margin:0 20px;
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  border-radius: 10px;
+
+  color: #2784fc;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  color: #2784fc
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #2784fc
+}
+#inpp{
+            width: 90%;
+            padding: 6px;
+            margin-bottom: 2px;
+            font-size: 16px;
+
+            border: 1px solid #888;
+            border-bottom: 1px solid #888;
+            background-color: #fff;
+            color: #666;
+          }
+          #inpp:focus{
+            outline: none;
+            border: 2px solid #555;
+            border-bottom: 2px solid #555;
+          }
+
+          .login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-container form{
+    padding: 10%;
+}
+
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-1 .btnSubmit1{
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+</style>
+
+	</head>
+	<body style="background-color:#EEF4F8 ;" >
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand">Resume Parser</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://localhost:5000/">Home</a>
+        </li>
+        
+      
+        <li>
+          <a href="http://localhost:5000/how_it_works">How It Works</a>
+        </li>
+        <li class="nav-item dropdown" >
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                    <div class="dropdown-menu" style="background-color:white; width:auto;  ">
+                        <a href="#" class="dropdown-item" style="text-decoration:none; "><i class="fa fa-phone" aria-hidden="true" style="padding-left:5px;"></i> 7092726036</a><br>
+                        <a href="#" class="dropdown-item" style="text-decoration:none; "><i class="fa fa-phone" aria-hidden="true" style="padding-left:5px;"></i> 9043870451</a>
+                      
+                       
+                    </div>
+                </li>
+      </ul>
+
+    </nav>
+       <br>   <br>
+  </div>
+</header>
+<br><br><br>
+	<center>
+	<header style="height:80%; ">
+		
+		
+
+<br><br><br><br>
+<div class="container login-container">
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+                <div class="col-md-6 login-form-1" style="background-color:white; border-radius: 10px; ">
+                    <h2 style="font-family: serif;"><b>Candidate Login</b></h2>
+                    <form  method="post" action="http://localhost:5000/canOptions">
+                      <p style="text-align: left;   font-family: 'Montserrat', sans-serif; color:#0050a0; font-size:15px; font-weight:bold;"> USER NAME:</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Your Email *" value="" autocomplete="off" required />
+                        </div>
+                         <p style="text-align: left;  font-family: 'Montserrat', sans-serif; color:#0050a0; font-size:15px; font-weight:bold;"> PASSWORD:</p>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Your Password *" value="" autocomplete="off" required />
+                        </div>
+
+                    <br>
+                            <button type="submit" class="btn btn-primary" style="text-decoration:none;  width: 100px;  " >Login</button>
+                  
+                       
+                        <br><br>
+                            <a type="button" href="http://localhost:5000/candidateregister" class="btn btn-success" style="text-decoration:none;  width: 100px; " name="register" >Register</a>
+                       
+                    </form>
+                  </div>
+                   <div class="col-md-3">
+              </div>
+                </div>
+
+              </div>
+</header>
+ </center> 
+</body>
+</html>
+

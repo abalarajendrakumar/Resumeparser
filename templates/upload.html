@@ -1,0 +1,390 @@
+<!doctype html>
+<title>Python Flask Multiple Files Upload Example</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Resume Parser</title>
+ 
+  
+<style>
+
+  .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding-top:40px;
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
+.navbar .nav {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+padding-top:15px;
+ font-weight:bold;
+  font-size: 1.4rem;
+   height:auto;
+}
+
+.navbar-inverse {
+  background-color: #2784fc;
+  height:auto;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #003300
+}
+
+.dropdown-menu {
+  background-color: #006B00
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: #002200
+}
+
+.navbar-inverse {
+  background-image: none;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-image: none;
+}
+
+.navbar-inverse {
+  border-color: #003300
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  margin:0 20px;
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  border-radius: 10px;
+
+  color: #2784fc;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  color: #2784fc
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #2784fc
+}
+  *{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+}
+
+.sec1{
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.sec2{
+  background: url(boy.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+h1{
+  font-size: 35px;
+  padding: 20px 0 10px 20px;
+}
+p{
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+}
+  #new{
+    font-weight: bold;
+    font-family: serif;
+  }
+ul li a{
+  
+  background:transparent;
+  border-radius: 10px;
+ padding:10px;
+}
+ul li a:hover{
+  
+color:black;
+}
+  #push:hover{
+
+  }
+ 
+
+h1 {
+  animation: move 2s;
+  -webkit-animation: move 2s;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+p {
+  animation: move 2s;
+  -webkit-animation: move 2s;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.new{
+  animation: move 2s;
+  -webkit-animation: move 2s;
+}
+
+@keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+            
+@-webkit-keyframes move {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+        #leftbox { 
+                float:left;  
+                background:white; 
+                width:55%; 
+                height:440px; 
+            } 
+            
+            #rightbox{ 
+                float:right; 
+                background:white;
+                
+                width:45%; 
+                height:440px; 
+            } 
+         .ull{
+         height:130px;
+         }
+           .ull .hg{
+              color:white;
+               
+              font-family: serif;
+              font-size: 19px;
+              float:right;
+
+                 font-weight: bold;
+              display:inline-block;
+              margin:0 90px;
+
+            }  
+</style>
+</head>
+<body >
+<header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand">Resume Parser</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="http://localhost:5000/">Home</a>
+        </li>
+        
+      
+        <li>
+          <a href="http://localhost:5000/how_it_works">How It Works</a>
+        </li>
+      <li class="nav-item dropdown" >
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact Us</a>
+                    <div class="dropdown-menu" style="background-color:white; width:auto;  ">
+                        <a href="#" class="dropdown-item" style="text-decoration:none; "><i class="fa fa-phone" aria-hidden="true" style="padding-left:5px;"></i> 7092726036</a><br>
+                        <a href="#" class="dropdown-item" style="text-decoration:none; "><i class="fa fa-phone" aria-hidden="true" style="padding-left:5px;"></i> 9043870451</a>
+                      
+                       
+                    </div>
+                </li>
+      </ul>
+
+    </nav>
+       <br>   <br>
+  </div>
+</header>
+ 
+ 
+  <section class=" text-white">
+    <br><br><br>
+    <div class="row">
+     <div class="col-md-6"> 
+       <section style="margin-top:100px; padding-left:100px;">
+
+    <div  style="background-color: white;">
+  
+      <h1 style="font-family: serif; color:#0050a0; text-align:center; "><b>WELCOME CANDIDATES</b></h1>
+      <p class="lead"  style="font-family: serif; color:black; font-weight: bold; font-size:20px; text-align:center;" >Please Upload your Resume</p>
+   
+      <br><br> 
+      <center>
+      <h4 style="font-size:18px; font-family:serif; ">Select file(s) to upload</h4>
+</center>
+<form method="post" action="http://localhost:5000/file" enctype="multipart/form-data" >
+             <input type="hidden" id="username" name="username" value={{ variable }} >
+
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required style="font-family:serif;  height:30px; font-size:18px;">
+		
+     <br>
+		<input type="submit" value="SUBMIT" style="width:70x; font-size:17px; color:white; padding:5px; font-family:bold;    background-color:red; height:35px;">
+	
+
+</form>
+  </div>
+ <br>
+
+</div>
+<div class="col-md-6" > 
+  <center >
+     
+ 
+  </center>
+   </div>
+  </section>
+   </div>
+  
+   
+<div>
+  
+   </div>
+ </div>
+<div class="part1" style="padding-left:150px margin-top: 50px; background-color: #0050a0;">
+    
+       <center style="margin-top:50px;">
+                  <h3 style="color:white; background-color: black; width:200px; text-align:center; border-radius:30px; padding:5px; " ><b style="margin-top:50px; font-size: 16px;">BENEFITS</b></h3>
+               </center>  
+              
+                <br><br>
+                <br>
+                <ul class="ull">
+                  <li class="hg" ><i class="fa fa-star-o" aria-hidden="true"></i> Increase Productivity</li>
+                  
+                  <li class="hg" > <i class="fa fa-star-o" aria-hidden="true"></i> Reduce Processing Time</li>
+
+                  <li class="hg" ><i class="fa fa-star-o" aria-hidden="true"></i> Reduce Cost</li>
+
+                  <li class="hg" ><i class="fa fa-star-o" aria-hidden="true"></i> Minimize Manual Work</li>
+                
+             <br>
+            </div>
+            <br><br>
+          </div>
+</section>
+<br><br><br>
+
+</body>
+</html>
